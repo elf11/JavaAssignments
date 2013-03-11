@@ -1,0 +1,535 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ro" dir="ltr" lang="ro"><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="generator" content="MediaWiki 1.13.2">
+		<meta name="keywords" content="Tema4">
+		<link rel="shortcut icon" href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/images/cs_logo.ico">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://cursuri.cs.pub.ro/%7Epoo/wiki/opensearch_desc.php" title="POO (ro)">
+		<link title="Creative Commons" type="application/rdf+xml" href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php?title=Tema4&amp;action=creativecommons" rel="meta">
+		<link rel="copyright" href="http://www.gnu.org/copyleft/fdl.html">
+		<link rel="alternate" type="application/rss+xml" title="POO Abonare RSS" href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php?title=Special:Schimb%C4%83ri_recente&amp;feed=rss">
+		<link rel="alternate" type="application/atom+xml" title="POO Abonare Atom" href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php?title=Special:Schimb%C4%83ri_recente&amp;feed=atom">
+		<title>Tema4 - POO</title>
+		<style type="text/css" media="screen, projection">/*<![CDATA[*/
+			@import "/~poo/wiki/skins/common/shared.css?164";
+			@import "/~poo/wiki/skins/monobook/main.css?164";
+		/*]]>*/</style>
+		<link rel="stylesheet" type="text/css" media="print" href="Tema4%20-%20POO_files/commonPrint.css">
+		<!--[if lt IE 5.5000]><style type="text/css">@import "/~poo/wiki/skins/monobook/IE50Fixes.css?164";</style><![endif]-->
+		<!--[if IE 5.5000]><style type="text/css">@import "/~poo/wiki/skins/monobook/IE55Fixes.css?164";</style><![endif]-->
+		<!--[if IE 6]><style type="text/css">@import "/~poo/wiki/skins/monobook/IE60Fixes.css?164";</style><![endif]-->
+		<!--[if IE 7]><style type="text/css">@import "/~poo/wiki/skins/monobook/IE70Fixes.css?164";</style><![endif]-->
+		<!--[if lt IE 7]><script type="text/javascript" src="/~poo/wiki/skins/common/IEFixes.js?164"></script>
+		<meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+		
+		<script type="text/javascript">/*<![CDATA[*/
+var skin = "monobook";
+var stylepath = "/~poo/wiki/skins";
+var wgArticlePath = "/~poo/wiki/index.php/$1";
+var wgScriptPath = "/~poo/wiki";
+var wgScript = "/~poo/wiki/index.php";
+var wgVariantArticlePath = false;
+var wgActionPaths = [];
+var wgServer = "http://cursuri.cs.pub.ro";
+var wgCanonicalNamespace = "";
+var wgCanonicalSpecialPageName = false;
+var wgNamespaceNumber = 0;
+var wgPageName = "Tema4";
+var wgTitle = "Tema4";
+var wgAction = "view";
+var wgArticleId = "85";
+var wgIsArticle = true;
+var wgUserName = null;
+var wgUserGroups = null;
+var wgUserLanguage = "ro";
+var wgContentLanguage = "ro";
+var wgBreakFrames = false;
+var wgCurRevisionId = "1949";
+var wgVersion = "1.13.2";
+var wgEnableAPI = true;
+var wgEnableWriteAPI = false;
+var wgRestrictionEdit = [];
+var wgRestrictionMove = [];
+/*]]>*/</script>
+                
+		<script type="text/javascript" src="Tema4%20-%20POO_files/wikibits.js"><!-- wikibits js --></script>
+		<!-- Head Scripts -->
+		<script type="text/javascript" src="Tema4%20-%20POO_files/ajax.js"></script>
+<style type="text/css">/*<![CDATA[*/
+.source-java5 {line-height: normal; border: 1px dashed gray; padding: 5px; background: #f0f0f0; }
+.source-java5 li, .source-java5 pre {
+	line-height: normal; border: 0;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for java5
+ * CSS class: source-java5, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.java5.source-java5 .de1, .java5.source-java5 .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.java5.source-java5  {font-family:monospace;}
+.java5.source-java5 .imp {font-weight: bold; color: red;}
+.java5.source-java5 li, .java5.source-java5 .li1 {font-weight: normal; vertical-align:top;}
+.java5.source-java5 .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.java5.source-java5 .li2 {font-weight: bold; vertical-align:top;}
+.java5.source-java5 .kw1 {color: #000000;  font-weight: bold;}
+.java5.source-java5 .kw2 {color: #000000; font-weight: bold;}
+.java5.source-java5 .kw3 {color: #006600; font-weight: bold;}
+.java5.source-java5 .kw4 {color: #006600; font-weight: bold;}
+.java5.source-java5 .kw5 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw6 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw7 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw8 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw9 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw10 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw11 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw12 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw13 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw14 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw15 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw16 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw17 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw18 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw19 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw20 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw21 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw22 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw23 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw24 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw25 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw26 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw27 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw28 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw29 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw30 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw31 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw32 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw33 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw34 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw35 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw36 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw37 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw38 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw39 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw40 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw41 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw42 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw43 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw44 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw45 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw46 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw47 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw48 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw49 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw50 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw51 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw52 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw53 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw54 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw55 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw56 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw57 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw58 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw59 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw60 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw61 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw62 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw63 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw64 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw65 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw66 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw67 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw68 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw69 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw70 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw71 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw72 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw73 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw74 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw75 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw76 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw77 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw78 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw79 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw80 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw81 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw82 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw83 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw84 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw85 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw86 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw87 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw88 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw89 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw90 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw91 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw92 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw93 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw94 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw95 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw96 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw97 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw98 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw99 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw100 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw101 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw102 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw103 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw104 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw105 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw106 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw107 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw108 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw109 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw110 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw111 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw112 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw113 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw114 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw115 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw116 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw117 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw118 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw119 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw120 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw121 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw122 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw123 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw124 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw125 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw126 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw127 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw128 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw129 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw130 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw131 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw132 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw133 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw134 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw135 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw136 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw137 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw138 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw139 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw140 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw141 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw142 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw143 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw144 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw145 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw146 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw147 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw148 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw149 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw150 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw151 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw152 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw153 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw154 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw155 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw156 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw157 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw158 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw159 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw160 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw161 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw162 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw163 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw164 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw165 {color: #003399; font-weight: bold;}
+.java5.source-java5 .kw166 {color: #003399; font-weight: bold;}
+.java5.source-java5 .co1 {color: #666666; font-style: italic;}
+.java5.source-java5 .co2 {color: #006699;}
+.java5.source-java5 .coMULTI {color: #666666; font-style: italic;}
+.java5.source-java5 .es0 {color: #000099; font-weight: bold;}
+.java5.source-java5 .br0 {color: #009900;}
+.java5.source-java5 .sy0 {color: #339933;}
+.java5.source-java5 .st0 {color: #0000ff;}
+.java5.source-java5 .nu0 {color: #cc66cc;}
+.java5.source-java5 .me1 {color: #006633;}
+.java5.source-java5 .me2 {color: #006633;}
+.java5.source-java5 .ln-xtra, .java5.source-java5 li.ln-xtra, .java5.source-java5 div.ln-xtra {background-color: #ffc;}
+.java5.source-java5 span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/~poo/wiki/index.php?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+/*]]>*/
+</style><style type="text/css">/*<![CDATA[*/
+.source-genero {line-height: normal; border: 1px dashed gray; padding: 5px; background: #f0f0f0; }
+.source-genero li, .source-genero pre {
+	line-height: normal; border: 0;
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for genero
+ * CSS class: source-genero, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.genero.source-genero .de1, .genero.source-genero .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.genero.source-genero  {font-family:monospace;}
+.genero.source-genero .imp {font-weight: bold; color: red;}
+.genero.source-genero li, .genero.source-genero .li1 {font-weight: normal; vertical-align:top;}
+.genero.source-genero .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.genero.source-genero .li2 {font-weight: bold; vertical-align:top;}
+.genero.source-genero .kw1 {color: #0600FF;}
+.genero.source-genero .kw2 {color: #0000FF; font-weight: bold;}
+.genero.source-genero .kw3 {color: #008000;}
+.genero.source-genero .kw4 {color: #FF0000;}
+.genero.source-genero .co1 {color: #008080; font-style: italic;}
+.genero.source-genero .co2 {color: #008080;}
+.genero.source-genero .coMULTI {color: #008080; font-style: italic;}
+.genero.source-genero .es0 {color: #008080; font-weight: bold;}
+.genero.source-genero .br0 {color: #000000;}
+.genero.source-genero .sy0 {color: #008000;}
+.genero.source-genero .st0 {color: #808080;}
+.genero.source-genero .nu0 {color: #FF0000;}
+.genero.source-genero .me1 {color: #0000FF;}
+.genero.source-genero .me2 {color: #0000FF;}
+.genero.source-genero .ln-xtra, .genero.source-genero li.ln-xtra, .genero.source-genero div.ln-xtra {background-color: #ffc;}
+.genero.source-genero span.xtra { display:block; }
+
+/*]]>*/
+</style>
+<style type="text/css">/*<![CDATA[*/
+@import "/~poo/wiki/index.php?title=MediaWiki:Geshi.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+/*]]>*/
+</style>		<script type="text/javascript" src="Tema4%20-%20POO_files/index.php"><!-- site js --></script>
+		<style type="text/css">/*<![CDATA[*/
+@import "/~poo/wiki/index.php?title=MediaWiki:Common.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/~poo/wiki/index.php?title=MediaWiki:Monobook.css&usemsgcache=yes&action=raw&ctype=text/css&smaxage=18000";
+@import "/~poo/wiki/index.php?title=-&action=raw&gen=css&maxage=18000&useskin=monobook";
+/*]]>*/</style>
+	</head>
+<body class="mediawiki ns-0 ltr page-Tema4">
+	<div id="globalWrapper">
+		<div id="column-content">
+	<div id="content">
+		<a name="top" id="top"></a>
+				<h1 class="firstHeading">Tema4</h1>
+		<div id="bodyContent">
+			<h3 id="siteSub">De la POO</h3>
+			<div id="contentSub"></div>
+									<div id="jump-to-nav">Salt la: <a href="#column-one">Navigare</a>, <a href="#searchInput">căutare</a></div>			<!-- start content -->
+			<ul><li> <b>Responsabil</b>: Mihnea MURARU
+</li><li> <b>Data publicarii</b>: 14-12-2011, ora 15:30
+</li><li> <b>Data ultimei modificari</b>: -
+</li><li> <b>Termenul de predare</b>: 15-01-2012, ora 23:55
+</li><li> <b>Obiective urmarite</b>:
+<ul><li> intelegerea structurii de <b>tabel de dispersie asociativ</b> si implementarea acesteia
+</li><li> intrebuintarea <b>genericitatii</b> pentru extinderea utilizabilitatii structurii implementate
+</li></ul>
+</li></ul>
+<p><br>
+</p>
+<table id="toc" class="toc" summary="Cuprins"><tbody><tr><td><div id="toctitle"><h2>Cuprins</h2> <span class="toctoggle">[<a href="javascript:toggleToc()" class="internal" id="togglelink">ascunde</a>]</span></div>
+<ul>
+<li class="toclevel-1"><a href="#Introducere"><span class="tocnumber">1</span> <span class="toctext">Introducere</span></a></li>
+<li class="toclevel-1"><a href="#Scopul_temei"><span class="tocnumber">2</span> <span class="toctext">Scopul temei</span></a></li>
+<li class="toclevel-1"><a href="#Cerinte"><span class="tocnumber">3</span> <span class="toctext">Cerinte</span></a>
+<ul>
+<li class="toclevel-2"><a href="#Implementare_.2880p.29"><span class="tocnumber">3.1</span> <span class="toctext">Implementare (80p)</span></a></li>
+<li class="toclevel-2"><a href="#Analiza_.2820p.29"><span class="tocnumber">3.2</span> <span class="toctext">Analiza (20p)</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1"><a href="#Precizari_generale"><span class="tocnumber">4</span> <span class="toctext">Precizari generale</span></a></li>
+<li class="toclevel-1"><a href="#Incarcarea_temelor"><span class="tocnumber">5</span> <span class="toctext">Incarcarea temelor</span></a></li>
+<li class="toclevel-1"><a href="#Notare"><span class="tocnumber">6</span> <span class="toctext">Notare</span></a></li>
+</ul>
+</td></tr></tbody></table><script type="text/javascript"> if (window.showTocToggle) { var tocShowText = "arată"; var tocHideText = "ascunde"; showTocToggle(); } </script>
+<a name="Introducere"></a><h2> <span class="mw-headline"> Introducere </span></h2>
+<p><b>Tabela de dispersie asociativa</b> este o structura de date care asociaza <b>chei</b> cu <b>valori</b>.
+ Aceasta permite cautarea eficienta a unei valori pe baza cheii 
+corespunzatoare. De exemplu, putem avea drept tabela de dispersie o 
+agenda telefonica din care sa obtinem numarul de telefon al unei 
+persoane pe baza numelui sau.
+</p><p>Principiul de baza este urmatorul: in locul dispunerii intr-o singura lista liniara a tuturor perechilor cheie-valoare (<i><b>entry</b></i>-uri) din tabela, acestea sunt grupate in mai multe subliste (<i><b>bucket</b></i>-uri), pe baza unui anumit criteriu. Astfel, cautarea unei chei se va face <b>doar</b> in <i>bucket</i>-ul corespunzator, si nu in toata lista, fapt ce reduce timpul de cautare. Pentru stabilirea <i>bucket</i>-ului in care va fi plasat un <i>entry</i>, cheii ii este aplicata o functie de dispersie (<i><b>hash function</b></i>) care intoarce un numar intreg, numit cod de dispersie (<i><b>hash code</b></i>). Pe baza acestuia se determina <i>bucket</i>-ul in care se va introduce intrarea. Iata o tabela de dispersie:
+</p>
+<div class="center"><div class="floatnone"><span><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/Imagine:Hashtableexpl.png" class="image" title="Hashtableexpl.png"><img alt="" src="Tema4%20-%20POO_files/Hashtableexpl.png" border="0" height="306" width="243"></a></span></div></div>
+<div class="center"><div class="floatnone"><span><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/Imagine:Functii_resized.png" class="image" title="Functii resized.png"><img alt="" src="Tema4%20-%20POO_files/Functii_resized.png" border="0" height="450" width="600"></a></span></div></div>
+<p>Sa luam exemplul <b>agendei telefonice</b>. Putem alege drept functie de dispersie <i>h</i> pozitia din alfabet a primei litere a numelui persoanei. De exemplu, <i>h("Andrei") = 1</i> (litera A ocupa pozitia 1 in alfabet). Avem astfel 26 de valori posibile ale functiei <tt>h</tt> si introducem in tabela 26 de <i>bucket</i>-uri. Primul va reprezenta lista perechilor (<i>nume</i>, <i>numar_de_telefon</i>)
+ pentru care numele incep cu litera A. Al doilea, cu litera B etc. Mai 
+jos se afla o reprezentare principiala a agendei. Desigur, in ultima 
+coloana se pot inlantui mai multe intrari in acelasi bucket.
+</p>
+<div class="center"><div class="floatnone"><span><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/Imagine:Phonebook.png" class="image" title="Phonebook.png"><img alt="" src="Tema4%20-%20POO_files/Phonebook.png" border="0" height="195" width="362"></a></span></div></div>
+<p>Constatam ca <b>eficienta</b> operatiei de cautare depinde de alegerea <b>functiei de dispersie</b>. De exemplu, pentru o functie de dispersie <b>constanta</b>, <i>h(key) = 1</i>, pentru orice cheie <i>key</i>, obtinem o unica lista inlantuita. In acest caz eficienta este <b>cea mai slaba</b>. La polul opus, cu eficienta <b>maxima</b>, s-ar afla o functie de dispersie <b>injectiva</b>, care genereaza un cod de dispersie <b>unic</b>
+ pentru fiecare cheie, astfel ca fiecare bucket ar contine o singura 
+intrare. In practica, astfel de functii sunt foarte greu de gasit.
+</p>
+<a name="Scopul_temei"></a><h2> <span class="mw-headline"> Scopul temei </span></h2>
+<p>Tema urmareste implementarea unui <b>tabel de dispersie asociativ</b>, <b>generic</b>, ce va permite stocarea perechilor cheie-valoare, avand orice tipuri.
+</p>
+<a name="Cerinte"></a><h2> <span class="mw-headline"> Cerinte </span></h2>
+<a name="Implementare_.2880p.29"></a><h3> <span class="mw-headline"> Implementare (80p) </span></h3>
+<p>Clasa voastra, <tt>MyHashMapImpl</tt>, va implementa interfata <tt>MyHashMap&lt;K, V&gt;</tt> definita de noi (in arhiva <a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/images/8/85/Tema4_Tester.zip" class="internal" title="Tema4 Tester.zip">tester</a>-ului), conservand <b>genericitatea</b>:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="java5 source-java5" style="font-family:monospace;"><span class="kw2">class</span> MyHashMapImpl<span class="sy0">&lt;</span>K, V<span class="sy0">&gt;</span> <span class="kw2">implements</span> MyHashMap<span class="sy0">&lt;</span>K, V<span class="sy0">&gt;</span></div></div>
+<p>Interfata <tt>MyHashMap</tt> contine si interfetele interioare <tt>Entry&lt;K, V&gt;</tt> si <tt>Bucket&lt;K, V&gt;</tt>, pentru a reprezenta entitatile implicate. Va trebui sa implementati si aceste interfete (puteti folosi clase interne).
+</p><p>In cadrul implementarii voastre va trebui sa aveti acces la <i>bucket</i>-urile tabelei direct prin intermediul unui indice. Folositi un <b>vector de <i>bucket</i>-uri</b> (<tt>[]</tt> sau <tt>ArrayList</tt>) si <b>nu</b> o lista inlantuita (gen <tt>LinkedList</tt>), pentru ca accesul la orice element sa se faca in <b>timp constant</b>. Ideal ar fi ca acest index sa fie tocmai <b>codul de dispersie</b>.
+ Adesea insa, codul are un interval prea mare de valori pentru a putea 
+reprezenta direct indicele intr-un vector. Cum, in general, codul de 
+dispersie are tipul <tt>int</tt>, este putin probabil sa definiti un 
+vector cu indici intre -2 miliarde si 2 miliarde. De obicei sa defineste
+ un vector cu un numar <b>mai redus</b> de bucket-uri (ex.: 20) iar codul de dispersie este <b>translatat</b> in acest interval. O functie de translatare des intrebuintata in acest sens este <i>modulo</i>: <i>translate(hashCode) = |hashCode|&nbsp;% numBuckets</i>. Aceasta functie garanteaza obtinerea unui indice intre 0 si <i>numBuckets - 1</i>. Am folosit valoarea absoluta a lui <i>hashCode</i> deoarece poate fi si negativ.
+</p><p>Clasa <tt>Object</tt> pune la dispozitie metoda <tt>hashCode</tt>, care intoarce tocmai codul de dispersie (<tt>int</tt>) asociat unui obiect. Aceasta este echivalenta functiei de dispersie. Metoda este folosita de clasa <tt>HashMap</tt> din biblioteca Java. In mod implicit, la definirea unei noi clase ce mosteneste <tt>Object</tt>, <tt>hashCode</tt> intoarce <b>adresa de memorie</b> a obiectului. Acest lucru nu este de foarte mare ajutor. In general metoda trebuie <b>supradefinita</b> pentru a intoarce un cod calculat (eficient) pe baza datelor interne ale obiectului. Majoritatea claselor din biblioteca Java (<tt>String</tt>, Integer etc.) supradefinesc deja metoda <tt>hashCode</tt>, astfel ca va puteti baza pe ea. Veti folosi si voi aceasta metoda pentru a obtine <b>codul de dispersie</b> al unei chei din tabela, dar ii veti aplica <b>translatarea</b> din paragraful anterior pentru a obtine <b>indicele</b> in vectorul de bucket-uri. Procesul de determinare a <i>bucket</i>-ului in care va ajunge o cheie se poate rezuma asa:
+</p>
+<center>
+<p><tt>key</tt> -&gt; <tt>key.hashCode()</tt> -&gt; translatare <i>hashCode</i> -&gt; indice in vectorul de <i>bucket</i>-uri
+</p>
+</center>
+<p>Operatiile de baza ale tabelei, asa cum rezulta si din interfata <tt>MyHashMap</tt>, vor fi <tt>get</tt>, <tt>put</tt>, <tt>remove</tt>, <tt>size</tt>, cu aceeasi functionalitate ca cele din clasa <tt>HashMap</tt>, definita in biblioteca Java. In implementarea voastra puteti folosi liste, dar <b>nu</b> puteti folosi nici o implementare de tabel de dispersie din biblioteca.
+</p>
+<a name="Analiza_.2820p.29"></a><h3> <span class="mw-headline"> Analiza (20p) </span></h3>
+<p>Definiti clasa <b><tt>Student</tt></b>, cu memebrii <tt>nume</tt> (<tt>String</tt>) si <tt>varsta</tt> (<tt>int</tt>). Supradefiniti metoda <b><tt>hashCode</tt></b> pentru a calcula codul de dispersie pe baza membrilor (<tt>nume</tt> si <tt>varsta</tt>). Va trebui, de asemenea, sa supradefiniti si metoda <b><tt>equals</tt></b> (definita si ea in <tt>Object</tt>). Amintim ca aceasta metoda intoarce <tt>true</tt>
+ daca obiectul pentru care se apeleaza este echivalent cu obiectul 
+primit ca parametru. In cazul nostru echivalenta inseamna nume si varsta
+ identice.
+</p><p><b>Atentie!</b> Metoda <tt>equals</tt> trebuie sa primeasca <b>parametru</b> de tipul <tt>Object</tt>! Acesta este modul in care este definita in clasa <tt>Object</tt>. Declarand-o cu un alt parametru (ex. <tt>Student</tt>), <b>nu</b>
+ o veti supradefini, ci veti crea alta functie. Pentru a va asigura ca 
+ati supradefinit corect metoda, puteti prefixa declaratia cu adnotarea <tt>@Override</tt>, obtinand antetul:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="java5 source-java5" style="font-family:monospace;">@<span class="kw21">Override</span><br><span class="kw2">public</span> <span class="kw3">boolean</span> equals<span class="br0">(</span><span class="kw166">Object</span> o<span class="br0">)</span></div></div>
+<p>In acest fel, daca metoda nu supradefineste intr-adevar o metoda 
+dintr-o clasa parinte, compilatorul va semnala eroare. Este o practica 
+buna sa folositi <b>intotdeauna</b> <tt>@Override</tt> cand supradefiniti.
+</p><p>Un <b>algoritm</b> de calcul al <b>codului de dispersie</b> pentru un obiect, care isi dovedeste eficienta in practica, este:
+</p>
+<div dir="ltr" style="text-align: left;"><div class="genero source-genero" style="font-family:monospace;">h <span class="sy0">=</span> <span class="nu0">17</span><br>pentru fiecare variabila membru m<span class="sy0">:</span><br>&nbsp; &nbsp; h <span class="sy0">=</span> <span class="nu0">37</span> <span class="sy0">*</span> h <span class="sy0">+</span> m.<span class="me1">hashCode</span><span class="br0">(</span><span class="br0">)</span><br><span class="kw1">return</span> h</div></div>
+<p>Drept <i>hashCode</i> pentru o variabila intreaga puteti folosi valoarea insasi.
+</p><p>Definiti apoi clasa <b><tt>LazyStudent</tt></b>, care extinde <tt>Student</tt>, si supradefiniti metoda <b><tt>hashCode()</tt></b> astfel incat sa intoarca o valoare <b>constanta</b>.
+</p><p>Generati un numar mare de instante <tt>Student</tt> (&gt;1000) (cu membrii generati aleator) si introduceti-le intr-o lista.
+Parcurgeti lista si introduceti studentii intr-un <tt>MyHashMap&lt;Student, Integer&gt;</tt>, unde valorile sunt note. Faceti un numar mare de accesari aleatoare ale tabelei create (<tt>get</tt>), folosind drept chei instantele <tt>Student</tt> create mai devreme. Retineti valorile <tt>System.currentTimeMillis()</tt> inainte si dupa secventa de apeluri <tt>get</tt> si scadeti-le pentru a obtine <b>durata</b> in milisecunde a secventei.
+</p><p>Repetati experimentul, folosind de data aceasta instante <tt>LazyStudent</tt> si un <tt>MyHashMap&lt;LazyStudent, Integer&gt;</tt>.
+</p><p>Ce observati? (raspundeti in <tt>README</tt>).
+</p>
+<a name="Precizari_generale"></a><h2> <span class="mw-headline"> Precizari generale </span></h2>
+<ul><li> <b>nu</b> este permisa modificarea interfetei <tt>MyHashMap</tt>
+</li><li> clasa ce implementeaza <b>tabela de dispersie</b> se va numi <tt>MyHashMapImpl</tt>. Acest lucru este necesar pentru rularea <b>testelor</b>
+</li><li> clasa va oferi <b>constructorul</b> <tt>MyHashMapImpl(int numBuckets)</tt> prin care se va seta la crearea obiectului numarul de <i>bucket</i>-uri din tabela
+</li><li> <b>translatarea</b> codului de dispersie a unei chei in indicele de <i>bucket</i> se va face in <b>interiorul</b> tabelei, nu in implementari de <tt>hashCode()</tt>, pentru ca acest indice depinde de tabela particulara pe care o folosim, nefiind intrinsec obiectului
+</li><li> clasa ce va contine metoda <b><tt>main</tt></b> (pentru cerinta 2) se va numi <tt>MainClass</tt>
+</li></ul>
+<a name="Incarcarea_temelor"></a><h2> <span class="mw-headline"> Incarcarea temelor </span></h2>
+<p>Temele se vor incarca pe site sub forma unei arhive <b><tt>zip</tt></b>, avand numele in formatul <tt>GrupaSerie_NUME_Prenume.zip</tt>. Exemplu de nume: <tt>321CB_IONESCU_Ion.zip</tt>.
+</p><p>Arhiva va avea urmatoarea <b>structura</b>:
+</p>
+<ul><li> <b>folderul <tt>src</tt></b> - contine toate fisierele sursa;
+</li><li> <b>folderul <tt>doc</tt></b> - contine fisierele si folderele generate de utilitarul javadoc pentru fisierele sursa;
+</li><li> <b>fisierul text <tt>README</tt></b> - contine descrierea programului vostru.
+</li></ul>
+<a name="Notare"></a><h2> <span class="mw-headline"> Notare </span></h2>
+<p>Notarea se va efectua dupa urmatoarea schema:
+</p>
+<ul><li> 80 puncte - pentru cerintele temei (aceste 80p corespund celor 80p + 20p din descrierea cerintelor)
+</li><li> 10 puncte - existenta javadocurilor;
+</li><li> 10 puncte - calitatea codului, a comentariilor si a readme-ului - apreciate de asistent.
+</li></ul>
+<p>Pentru notare se va folosi acest <b><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/images/8/85/Tema4_Tester.zip" class="internal" title="Tema4 Tester.zip">tester</a></b>, toate testele fiind publice. Gasiti in fisierul <tt>readme.txt</tt> din arhiva detalii de intrebuintare.
+</p><p><font color="red"><b>Atentie!</b></font> Daca testerul acorda 0 
+puncte, atunci acesta va fi punctajul pentru intreaga tema, indiferent 
+de indeplinirea celorlalte cerinte! Temele care nu compileaza nu vor fi 
+luate in considerare. Temele trimise inainte de aparitia testerului nu 
+fac exceptie de la aceasta regula.
+</p><p>Pentru fiecare zi de <b>intarziere</b> se vor scadea cate 5/100 puncte. Dupa 14 zile de la trecerea termenului nu se vor mai putea incarca arhive pe site.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 89/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key poo_wiki:pcache:idhash:85-0!1!0!!ro!2!edit=0 and timestamp 20130311140731 -->
+<div class="printfooter">
+Adus de la "<a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/Tema4">http://cursuri.cs.pub.ro/~poo/wiki/index.php/Tema4</a>"</div>
+						<!-- end content -->
+			<div class="visualClear"></div>
+		</div>
+	</div>
+		</div>
+		<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Vizualizări</h5>
+		<div class="pBody">
+			<ul>
+	
+				 <li id="ca-nstab-main" class="selected"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/Tema4" title="Vezi articolul [alt-c]" accesskey="c">Pagină</a></li>
+				 <li id="ca-talk" class="new"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php?title=Discu%C5%A3ie:Tema4&amp;action=edit" title="Discuţie despre articol [alt-t]" accesskey="t">Discuţie</a></li>
+				 <li id="ca-viewsource"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php?title=Tema4&amp;action=edit" title="Aceasta pagina este protejată. Poţi sa vezi doar codul sursă. [alt-e]" accesskey="e">Vezi sursa</a></li>
+				 <li id="ca-history"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php?title=Tema4&amp;action=history" title="Versiuni vechi ale acestui document. [alt-h]" accesskey="h">Istoric</a></li>			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Unelte personale</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-login"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php?title=Special:Conectare&amp;returnto=Tema4" title="Eşti încurajat să te autentifici, deşi acest lucru nu este obligatoriu. [alt-o]" accesskey="o">Autentificare</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a style="background-image: url(images/cs_logo.gif);" href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/Pagina_principal%C4%83" title="Vizitează pagina principală [alt-z]" accesskey="z"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5>Navigare</h5>
+		<div class="pBody">
+			<ul>
+				<li id="n-mainpage-description"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/Pagina_principal%C4%83">Pagina principală</a></li>
+				<li id="n-portal"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/POO:Portal_Comunitate" title="Despre proiect, ce poţi face tu, unde găseşti soluţii.">Portalul comunităţii</a></li>
+				<li id="n-currentevents"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/POO:Cafenea" title="Găseşte informaţii despre evenimente curente">Discută la cafenea</a></li>
+				<li id="n-recentchanges"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/Special:Schimb%C4%83ri_recente" title="Lista ultimelor schimbări realizate în acest wiki. [alt-r]" accesskey="r">Schimbări recente</a></li>
+				<li id="n-randompage"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/Special:Aleatoriu" title="Mergi spre o pagină aleatoare [alt-x]" accesskey="x">Pagină aleatorie</a></li>
+				<li id="n-help"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/Ajutor:Ajutor" title="Locul în care găseşti ajutor.">Ajutor</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Caută</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="/~poo/wiki/index.php/Special:Search" id="searchform"><div>
+				<input id="searchInput" name="search" title="Căutare în POO [alt-f]" accesskey="f" type="text">
+				<input name="go" class="searchButton" id="searchGoButton" value="Du-te" title="Du-te la pagina cu acest nume dacă există" type="submit">&nbsp;
+				<input name="fulltext" class="searchButton" id="mw-searchButton" value="Caută" title="Caută paginile pentru acest text" type="submit">
+			</div></form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Trusa de unelte</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/Special:WhatLinksHere/Tema4" title="Lista tuturor paginilor wiki care conduc spre această pagină [alt-j]" accesskey="j">Ce se leagă aici</a></li>
+				<li id="t-recentchangeslinked"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/Special:RecentChangesLinked/Tema4" title="Schimbări recente în legătură cu această pagină [alt-k]" accesskey="k">Modificări corelate</a></li>
+<li id="t-upload"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/Special:%C3%8Encarc%C4%83" title="Încarcă fişiere [alt-u]" accesskey="u">Trimite fişier</a></li>
+<li id="t-specialpages"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/Special:SpecialPages" title="Lista tuturor paginilor speciale [alt-q]" accesskey="q">Pagini speciale</a></li>
+				<li id="t-print"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php?title=Tema4&amp;printable=yes" title="Versiunea de tipărit a acestei pagini [alt-p]" accesskey="p">Versiune de tipărit</a></li>				<li id="t-permalink"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php?title=Tema4&amp;oldid=1949" title="Legătura permanentă către această versiune a paginii">Legătură permanentă</a></li><li id="t-pdf"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php?title=Special:Pdfprint&amp;page=Tema4">Print as PDF</a></li>			</ul>
+		</div>
+	</div>
+		</div><!-- end of the left (by default at least) column -->
+			<div class="visualClear"></div>
+			<div id="footer">
+				<div id="f-poweredbyico"><a href="http://www.mediawiki.org/"><img src="Tema4%20-%20POO_files/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki"></a></div>
+				<div id="f-copyrightico"><a href="http://www.gnu.org/copyleft/fdl.html"><img src="Tema4%20-%20POO_files/gnu-fdl.png" alt="GNU Free Documentation License 1.2"></a></div>
+			<ul id="f-list">
+				<li id="lastmod"> Ultima modificare 13:30, 14 decembrie 2011.</li>
+				<li id="viewcount">Această pagină a fost vizitată de 3.394 ori.</li>
+				<li id="copyright">Conţinutul este disponibil sub <a href="http://www.gnu.org/copyleft/fdl.html" class="external " title="http://www.gnu.org/copyleft/fdl.html" rel="nofollow">GNU Free Documentation License 1.2</a>.</li>
+				<li id="privacy"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/POO:Politica_de_confiden%C5%A3ialitate" title="POO:Politica de confidenţialitate">Politica de confidenţialitate</a></li>
+				<li id="about"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/POO:Despre" title="POO:Despre">Despre POO</a></li>
+				<li id="disclaimer"><a href="http://cursuri.cs.pub.ro/%7Epoo/wiki/index.php/POO:Termeni" title="POO:Termeni">Termeni</a></li>
+			</ul>
+		</div>
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.604 secs. -->
+</body></html>
